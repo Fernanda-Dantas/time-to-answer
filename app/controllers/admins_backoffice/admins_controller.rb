@@ -3,7 +3,7 @@ class AdminsBackoffice::AdminsController < AdminsBackofficeController
   before_action :set_admin, only: [:edit, :update, :destroy]
 
   def index
-    @admins = Admin.all # variavel de inserção
+    @admins = Admin.all.page(params[:page]).per(5) # variavel de inserção
   end
 
   def new
