@@ -18,13 +18,13 @@
       <%= form_with(model: [ :admins_backoffice, @subject ], local: true, class:"form-horizontal form-label-left") do |form|%>
         <div class="form-group">
           <%= form.label :description, class:"control-label" %>
-          <%= form.text_field :description, class:"form-control col-md-7 col-xs-12", placeholder:"Descrição do Assunto/Área" %>
+          <%= form.text_field :description, class:"form-control col-md-7 col-xs-12", placeholder:t('placeholders.assunto') %>
         </div>
         <div class="ln_solid"></div>
         <div class="form-group">
           <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
             <!--<button class="btn btn-primary" type="button">Cancelar</button> -->
-            <button type="submit" class="btn btn-success">Salvar</button>
+            <button type="submit" class="btn btn-success"><%= t('buttons.save') %></button>
           </div>
         </div>
       <% end %>
