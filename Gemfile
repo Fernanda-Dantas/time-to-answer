@@ -65,6 +65,10 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  # Rails >= 6
+  # and there are is a big change it will work with Rails 5.2 too
+  gem 'rails_db'
+
 end
 
 group :test do
