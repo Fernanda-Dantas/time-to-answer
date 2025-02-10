@@ -12,7 +12,11 @@ Rails.application.config.assets.version = "1.0"
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 # app/assets
-Rails.application.config.assets.precompile += %w( application.js application.css admins_backoffice.js admins_backoffice.css users_backoffice.js users_backoffice.css admin_devise.css )
+Rails.application.config.assets.precompile += %w( application.js application.css 
+                                                  admins_backoffice.js admins_backoffice.css 
+                                                  users_backoffice.js users_backoffice.css 
+                                                  admin_devise.css admin_devise.js
+                                                  user_devise.css user_devise.js )
 
 # lib/assets
 Rails.application.config.assets.precompile += %w( custom.js custom.css img.jpg _img.png )

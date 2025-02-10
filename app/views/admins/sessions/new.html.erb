@@ -17,16 +17,9 @@
 
               <div>
                   <div class="actions">
-                    <%= f.submit "Entrar", class:"btn btn-default submit" %>
+                    <%= f.submit "Entrar", class:"btn btn-default submit", style: "float: none; margin-left: 0px; background-color: green; width: 70%; color: white;" %>
                   </div>
-                <a class="reset_pass" href="#">Lost your password?</a>
               </div>
-
-                <% if devise_mapping.rememberable? %>
-                  <label>
-                    <%= f.check_box :remember_me %> Lembrar-me
-                  </label>
-                <% end %>
 
               <div class="clearfix"></div>
 
