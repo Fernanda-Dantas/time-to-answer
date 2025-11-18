@@ -5,4 +5,18 @@ class Question < ApplicationRecord
 
   # kaminari
   paginates_per 5
+
+  def self.search(page, term)
+    Question.includes(:answers)
+        .where("lower(description) LIKE ?", "%#{term.downcase}%")
+        .page(page)
+  end
+
+  def self.last_questions(page)
+    Question.includes(:answers).order('created_at desc').page(page)
+  end
 end
+
+# Métodos de classe permitem o uso de um método
+# definido sem precisar instanciar a classe,
+# que no caso é o model.
