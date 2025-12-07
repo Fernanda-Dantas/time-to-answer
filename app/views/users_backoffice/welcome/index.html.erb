@@ -1,6 +1,28 @@
-<h1>UsersBackoffice::Welcome#index</h1>
-<p>Find me in app/views/users_backoffice/welcome/index.html.erb</p>
+<h1>Seja bem-vindo</h1>
 
-<p>
-<%= button_to 'Sair da conta [USUÁRIO]', destroy_user_session_path, method: :delete %>
-</p>
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 ">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-caret-square-o-right"></i></div>
+    <div class="count"><%= @user_statistics.total_questions %></div>
+    <h3>New Sign ups</h3>
+    <p>Lorem ipsum psdea itgum rixt.</p>
+  </div>
+</div>
+
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 ">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-caret-square-o-right"></i></div>
+    <div class="count"><%= @user_statistics.right_questions %></div>
+    <h3>New Sign ups</h3>
+    <p>Lorem ipsum psdea itgum rixt.</p>
+  </div>
+</div>
+
+<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 ">
+  <div class="tile-stats">
+    <div class="icon"><i class="fa fa-caret-square-o-right"></i></div>
+    <div class="count"><%= @user_statistics.wrong_questions %></div>
+    <h3>New Sign ups</h3>
+    <p>Lorem ipsum psdea itgum rixt.</p>
+  </div>
+</div>
