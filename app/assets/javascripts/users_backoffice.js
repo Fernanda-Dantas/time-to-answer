@@ -4,4 +4,5 @@
 //= require nprogress/nprogress
 //= require malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar
 //= require bootstrap-growl-ifightcrime/jquery.bootstrap-growl
+//= require jquery-ui/ui/widgets/datepicker
 //= require custom
